@@ -4,7 +4,7 @@ This is an implementation of the lambda lambda-bar calculus (or llbc for short),
 
 ## Requirements:
 
-This program requires the ocaml language (tested with version 3.11.2), see http://caml.inria.fr/ocaml/index.en.html.
+This program uses the ocaml language, see http://caml.inria.fr/ocaml/index.en.html.
 
 
 ## Installation:
