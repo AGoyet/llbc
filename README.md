@@ -1,6 +1,6 @@
-% LLBC
+# LLBC
 
-This is an implementation of the lambda lambda-bar calculus (or llbc for short), written in ocaml.
+This is an implementation of the lambda lambda-bar calculus (LLBC), written in ocaml.
 
 ## Requirements:
 
