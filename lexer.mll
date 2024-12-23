@@ -40,10 +40,10 @@ rule token = parse
 
   | "en"        {EN}
   | "ln"        {LN}
-  | "nn"        {PN}
+  | "pn"        {PN}
   | "mn"        {MN}
-  | "bt"       {BT}
-  | "BT"       {BT}
+  | "bt"        {BT}
+  | "BT"        {BT}
 
   | "ε"        {EP}
   | "λ"        {LP}
@@ -52,5 +52,8 @@ rule token = parse
   | "ὲ"        {EN}
   | "ƛ"        {LN}
 
+  | "̅ε"        {EN}
+  | "̅λ"        {LN}
+  
   | ident ident_num* as word  { IDENT(word) }
   | eof		{ EOF }

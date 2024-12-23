@@ -21,13 +21,13 @@ $(PROGRAM): $(OBJECTS) parser.cmi
 	$(OCAMLC) $(OCAMLFLAGS) $(OBJECTS) -o $(PROGRAM)
 
 clean:	
-	rm -f llbc.mli lexer.ml parser.ml parser.mli *.cmi *.cmo *.annot output.* \#*\#
+	rm -f llbc.mli lexer.ml parser.ml parser.mli parser.output *.cmi *.cmo *.annot output.*
 
 remove:
 	rm -f $(PROGRAM)
 
 test:	llbc
-	./llbc -i example_1 -c
+	./llbc -i examples/example_1 -c
 
 debug:$(PROGRAM)
 	ocamldebug $(PROGRAM) $(OCAMLFLAGS)

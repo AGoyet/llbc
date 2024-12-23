@@ -12,6 +12,9 @@ llbc
 *.cmxs
 *.cmxa
 
+# parser
+parser.output
+
 # ocamlbuild working directory
 _build/
 

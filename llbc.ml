@@ -174,8 +174,8 @@ let rec string_of_term_p = function
   | Nu(Var_p(s), pa) -> "ν" ^ s ^ "." ^ (string_of_term_p pa) 
 
 and string_of_term_n = function
-  | En -> "ὲ" (* "ε̄" *)
-  | Ln(Var_n(s), na) -> "ƛ" ^ s ^ "." ^ (string_of_term_n na) (* "λ̄" *)
+  | En -> "̅ε" (* "ε̄" *)
+  | Ln(Var_n(s), na) -> "̅λ" ^ s ^ "." ^ (string_of_term_n na) (* "λ̄" *)
   | na when na = hole_placeholder_n -> "[]n" (* case used to print contexts *)
   | Vn(Var_n(s), pa) -> s ^ "_" ^ (string_of_term_p pa)
   | Pn(na, nb) -> "(" ^ (string_of_term_n na) ^ "+" ^ (string_of_term_n nb) ^ ")"
@@ -459,7 +459,7 @@ let initialize_name_index_sub index s=
   try index:= max 
         !index 
         (int_of_string(String.sub s 1 (String.length(s) -1)) + 1)
-  with Failure "int_of_string" -> ()
+  with Failure failure_string -> () (* Typically "int_of_string" *)
 ;;
 
 let initialize_xu_index_p keep_walking = function
