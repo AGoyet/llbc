@@ -1,0 +1,28 @@
+# project specific
+llbc
+
+# ocaml
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+
+# ocamlbuild working directory
+_build/
+
+# ocamlbuild targets
+*.byte
+*.native
+
+# backup files
+*.bak
+
+# emacs
+*~
+\#*\#
+.\#*
