@@ -1,12 +1,6 @@
-
 (* file: lexer.mll *)
-(* Lexical analyzer returns one of the tokens:
-   the token NUM of a floating point number,
-   operators (PLUS, MINUS, MULTIPLY, DIVIDE, CARET, UMINUS),
-   or NEWLINE.  It skips all blanks and tabs, unknown characters
-   and raises End_of_file on EOF. *)
 {
-  open Parser (* Assumes the parser file is "rtcalc.mly". *)
+  open Parser
   open Llbc
 }
 

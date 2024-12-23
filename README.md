@@ -29,7 +29,7 @@ If no input file is provided with the "-i" option, the program reads on its stan
 
 ## Syntax:
 
-The syntax used in the terminal output is valid, and can be copied and pasted back to the executable (the leading "->" or "=", when present, should then be omitted). This syntax uses unicode approximations of the symbols used in the latex output, such as 'ƛ' for the lambda-bar. For easier keyboard input, the following sequence of characters are recognized:
+The syntax from the terminal output is valid, and can be copied and pasted back to the executable (the leading "->" or "=", when present, should then be omitted). This syntax uses unicode approximations of the symbols used in the latex output, such as '̅λ' for the lambda-bar. For easier keyboard input, the following sequence of characters are recognized (see examples/example_1_ascii):
 
 Symbol name:    keyboard        terminal output (accepted as input format)
 Positives:
@@ -38,11 +38,11 @@ lambda          lp              λ
 plus            pp              +
 merge           mp              <
 connexion       cp              V
-mu              mu              ν
+nu              nu              ν
 
-Negative:
-epsilon-bar     en              ὲ
-lambda-bar      ln              ƛ
+Negatives:
+epsilon-bar     en              ̅ε
+lambda-bar      ln              ̅λ
 plus            pn              +                
 merge           mn              <
 backtrack       BT		        BT

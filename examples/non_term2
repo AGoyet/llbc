@@ -1,1 +1,1 @@
-(l x1. l y. x1_ ln u2.ln w.u2_y_w_mu A.y_w_A) < (ln u1. ln v. u1_ l x2.l z.x2_v_mu B.z_v_B)
+(λx1.λy.x1_̅λu2.̅λw.u2_y_w_νA.y_w_A) < (̅λu1.̅λv.u1_λx2.λz.x2_v_νB.z_v_B)
